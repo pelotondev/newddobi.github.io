@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Centos7 Docker 설치하기
-subtitle: 
+title: Docker 설치하기
+subtitle: - Centos7 -
 cover-img: /assets/img/path.jpg
 tags: [books, test]
 comments: true
@@ -13,13 +13,16 @@ comments: true
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     yum install -y docker-ce
 
+
 # 2. 실행
 
     systemctl start docker
 
+
 # 3. docker 설치 후 /var/run/docker.sock의 permission denied 발생하는 경우
 
     sudo chmod 666 /var/run/docker.sock
+
 
 # 4. docker-compose 설치
 
