@@ -14,21 +14,21 @@ comments: true
 ---
 
 ### 계정 생성
-```redis
+```console
 ACL SETUSER peloton on >peloton12#$ allcommands allkeys
 ```
 
 ---
 
 ### 계정 삭제
-```redis
+```console
 ACL DELUSER peloton
 ```
 
 ---
 
 ### 계정 확인
-```redis
+```console
 ACL LIST
 ```
 
