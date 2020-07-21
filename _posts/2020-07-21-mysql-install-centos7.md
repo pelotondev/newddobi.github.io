@@ -18,7 +18,7 @@ sudo yum -y install mysql-community-server
 
 ## 2. mysql 시작 및 설정
 
-> ### 1. 비밀번호 암호화 방법 변경
+>> ### 1. 비밀번호 암호화 방법 변경
 * my.cnf 파일 default-authentication-plugin=mysql_native_password 주석 해제
 
 > ### 2. 시작 및 상태 확인
