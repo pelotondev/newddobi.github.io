@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Jenkins 설치하기
-subtitle: Docker
+title: Docker Jenkins 설치하기
+subtitle: 
 cover-img: /assets/img/path.jpg
 tags: [books, test]
 comments: true
