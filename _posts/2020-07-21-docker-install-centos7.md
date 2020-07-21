@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker 설치하기
-subtitle: - Centos7 -
+subtitle: Centos7
 cover-img: /assets/img/path.jpg
 tags: [books, test]
 comments: true
