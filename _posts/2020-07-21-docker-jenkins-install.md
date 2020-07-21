@@ -30,7 +30,8 @@ docker-compose up -d jenkins
 ---
 ### 3. Install Suggest Plugins
 
-===번외===
+===
+번외
 
 ### 1. Jenkins Docker images 다운로드
     docker pull jenkins/jenkins:lts
