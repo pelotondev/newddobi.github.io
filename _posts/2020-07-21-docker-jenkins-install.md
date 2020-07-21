@@ -39,6 +39,7 @@ docker-compose up -d jenkins
 ### 1. Jenkins Docker images 다운로드
     docker pull jenkins/jenkins:lts
 ---
+
 ### 2. Jenkins Docker 실행
 ```console
 docker run -e TZ=Asia/Seoul -v /home/peloton/docker/jenkins/jenkins_home:/var/jenkins_home -d -p 8181:8080 --name peloton_jenkins -u root jenkins/jenkins:lts
