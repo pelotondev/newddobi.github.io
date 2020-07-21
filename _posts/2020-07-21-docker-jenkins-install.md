@@ -25,13 +25,16 @@ jenkins:
 docker-compose up -d jenkins
 ```
 ---
+
 ### 2. Addministrator password 입력
 * docker logs containerID > password 출력되면 웹에 입력
 ---
-### 3. Install Suggest Plugins
 
-===
-번외
+### 3. Install Suggest Plugins
+---
+
+---
+## compose 없이 실행하는 방법
 
 ### 1. Jenkins Docker images 다운로드
     docker pull jenkins/jenkins:lts
