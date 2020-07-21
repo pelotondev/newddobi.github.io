@@ -15,16 +15,17 @@ yum install -y docker-ce
 ```  
 
 ### 2. 실행
-
-    systemctl start docker
-
+```console
+systemctl start docker
+```
 
 ### 3. docker 설치 후 /var/run/docker.sock의 permission denied 발생하는 경우
+```console
+sudo chmod 666 /var/run/docker.sock
+```
 
-    sudo chmod 666 /var/run/docker.sock
-
-
-## 4. docker-compose 설치
-
-    sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    sudo chmod +x /usr/local/bin/docker-compos
+### 4. docker-compose 설치
+```console
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compos
+```
