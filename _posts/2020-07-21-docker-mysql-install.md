@@ -28,7 +28,7 @@ docker-compose up -d mysql
 ### 2. 계정 추가
 ```sql
 create user 'peloton'@'%' identified by 'peloton12#$';
-```
+```  
 > 모든 IP대역에서 접근 가능한 유저
 
 ---
@@ -36,5 +36,5 @@ create user 'peloton'@'%' identified by 'peloton12#$';
 ### 3. 계정 권한 변경
 ```sql
 GRANT ALL PRIVILEGES ON OpenKitchen.* TO 'peloton'@'%' WITH GRANT OPTION;
-```
+```  
 > peloton 계정으로 OpenKitchen의 모든 테이블에 모든 IP대역에서 접근 가능하도록 변경
