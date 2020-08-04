@@ -15,7 +15,7 @@ comments: true
       command: --default-authentication-plugin=mysql_native_password
       restart: always
       environment:
-        MYSQL_ROOT_PASSWORD: root1234
+        MYSQL_ROOT_PASSWORD: 비밀번호
       ports:
           - 3306:3306
 ```
@@ -27,7 +27,7 @@ docker-compose up -d mysql
 
 ### 2. 계정 추가
 ```sql
-create user 'peloton'@'%' identified by 'peloton12#$';
+create user 'peloton'@'%' identified by '비밀번호';
 ```  
 > 모든 IP대역에서 접근 가능한 유저
 
