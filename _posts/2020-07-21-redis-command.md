@@ -15,7 +15,7 @@ comments: true
 
 ### 계정 생성
 ```console
-ACL SETUSER peloton on >peloton12#$ allcommands allkeys
+ACL SETUSER peloton on >변경할비밀번호 allcommands allkeys
 ```
 
 ---
