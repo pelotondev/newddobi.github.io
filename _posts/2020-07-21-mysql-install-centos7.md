@@ -47,14 +47,14 @@ SET GLOBAL validate_password.policy=LOW;
 
 > ### 2. root 비밀번호 변경 및 외부 접속 추가
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'mysql12#$';
-CREATE USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root12#$';
+ALTER USER 'root'@'localhost' IDENTIFIED BY '비밀번호';
+CREATE USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '비밀번호';
 GRANT ALL PRIVILEGES ON *.* to 'root'@'%' WITH GRANT OPTION;
 ```
 
 > ### 3. 계정 추가
 ```sql
-create user 'peloton'@'%' identified by 'peloton12#$';
+create user 'peloton'@'%' identified by '비밀번호';
 ```
 * 모든 IP대역에서 접근 가능한 유
 
