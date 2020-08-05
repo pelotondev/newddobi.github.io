@@ -26,7 +26,7 @@ zone "pelotonkorea.com" IN {
 };
 ```
 ### 2. /var/named/chroot/var/named/pelotonkorea.com.zone 파일 생성
-```shell
+```
 $TTL 1D
 @       IN      SOA     ns.pelotonkorea.com. root.pelotonkorea.com. (
                                         20200805        ;serial
