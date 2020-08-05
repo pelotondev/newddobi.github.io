@@ -24,4 +24,30 @@ zone "pelotonkorea.com" IN {
         allow-update { none; };
 };
 > ### 2. /var/named/chroot/var/named/pelotonkorea.com.zone 파일 생성
->> 
+>> ```shell
+$TTL 1D
+@       IN      SOA     ns.pelotonkorea.com. root.pelotonkorea.com. (
+                                        20200805        ;serial
+                                        86400           ;refresh
+                                        15M     ;retry
+                                        48H     ;expire
+                                        86400 ) ;minimum
+;
+
+        IN      NS      ns.pelotonkorea.com.    ;primary dns
+        IN      A       119.192.148.203         ;ip address
+www     IN      A       119.192.148.203         ;www
+*       IN      A       119.192.148.203         ;subdomain
+```
+>> 파일 작성 정상 확인
+>> named-checkconf /etc/named.conf
+>> named-checkzone pelotonkorea.com /var/named/chroot/var/named/pelotonkorea.com.zone
+> ### 3. naemd-chroot 사용을 위한 파일 이동
+```console
+cp -p *.* ./chroot/var/named/.
+```
+> ### 4. named 실행 및 상태확인
+```console
+systemctl start named-chroot
+systemctm status named-chroot
+```
