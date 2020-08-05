@@ -26,7 +26,8 @@ zone "pelotonkorea.com" IN {
 };
 ```
 ### 2. /var/named/chroot/var/named/pelotonkorea.com.zone 파일 생성
-```
+```shell
+
 $TTL 1D
 @       IN      SOA     ns.pelotonkorea.com. root.pelotonkorea.com. (
                                         20200805        ;serial
@@ -40,6 +41,7 @@ $TTL 1D
         IN      A       119.192.148.203         ;ip address
 www     IN      A       119.192.148.203         ;www
 *       IN      A       119.192.148.203         ;subdomain
+
 ```
 ### 3. 파일 작성 정상 확인
 * named-checkconf /etc/named.conf
