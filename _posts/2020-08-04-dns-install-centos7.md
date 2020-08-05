@@ -44,10 +44,12 @@ www     IN      A       119.192.148.203         ;www
 ### 3. 파일 작성 정상 확인
 * named-checkconf /etc/named.conf
 * named-checkzone pelotonkorea.com /var/named/chroot/var/named/pelotonkorea.com.zone
+---------------------------------------------------------------------------
 ## 3. naemd-chroot 사용을 위한 파일 이동
 ```console
 cp -p *.* ./chroot/var/named/.
 ```
+---------------------------------------------------------------------------
 ## 4. named 실행 및 상태확인
 ```console
 systemctl start named-chroot
