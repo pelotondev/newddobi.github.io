@@ -15,12 +15,10 @@ sudo yum install -y bind bind-utils bind-chroot
 ---------------------------------------------------------------------------
 ## 2. 설정
 > ### 1. /etc/named.conf 파일 수정 
+
 >> listen-on port 53 { 127.0.0.1; }; > listen-on port 53 { any; }; 
-
 >> allow-query     { localhost; }; > allow-query     { any; }; 
-
 >> recursion yes; > recursion no; 
-
 >> 추가 
 
 zone "pelotonkorea.com" IN {
